@@ -1,0 +1,198 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Nunito, sans-serif;
+}
+h2{
+    z-index: 10;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    justify-content: left;
+}
+label{
+    display: block;
+    margin: 10px;
+    height: 3rem;
+
+}
+form textarea{
+    margin: 10px;
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    resize: none;
+}
+form input{
+    padding: 4px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+}
+#menuout{
+    order: 3;
+    position: absolute;
+    right: 17vh;
+    top:5vh;
+    width:4%;
+}
+.container{
+   position: relative;
+}
+.headbox{
+    position: absolute;
+    top:50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+.arrow{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 80vh;
+    left:50vw;
+    transform: translate(-50%);
+}
+.lotx{
+    margin-left:4%;
+    flex-grow: 5;
+    order: 1;
+    display:flex;
+    align-items:center;
+}
+.lotx>*{
+    align-items: center;
+    float: left;
+}
+.thirdback{
+        opacity:.9;
+        width: 38%;
+        height: 100vh;
+        margin: auto;
+        overflow: hidden;
+}
+.bak{
+    opacity:.6;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+
+}
+main{
+    display: flex;
+    flex-direction: row;
+    
+}
+.maintextzone{
+    padding-right: 3vh;
+    padding-bottom: 0px;
+    padding-left: 3vh;
+    padding-top: 12vh;
+    width:170vh;   
+    display:flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sidepics{
+    width: 47vh;
+    float: right;
+
+}
+.arttainer{
+display:flex;
+text-align: center;
+}
+.arttainer p{
+    margin:5px;
+}
+.artykul2, .artykul3, .artykul4{
+    width: 33%;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headbar{
+    width: 100%;
+}
+.artykul1{
+width: 40%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+.artykul1 h3{
+    margin:5px;
+}
+.artykul1 p{
+    margin:5px;
+}
+nav {
+    width: 100%;
+    height: 140px;
+    display:flex;
+    flex-direction: row;
+    position:fixed;
+    top:0px;
+    z-index: 10;
+}
+.menu{
+    display: none;
+}
+.menuact{
+    width: 40vh;
+    height: 80vh;
+    position: fixed;
+    top: 14vh;
+    right: 1vh;
+    display: block;
+    
+}
+.menuact>a{
+    margin:10px;
+}
+.lista{
+    
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    align-self: center;
+    margin:auto;
+    widows: 100%;
+    height:100%;
+}
+.lista>ul{
+    margin:auto;
+}
+ .lista>ul>li{
+     margin: 1rem;
+     text-align: center;
+ }
+ .lista>ul>hr{
+    width:250px;
+    margin:auto;
+}
+a{
+    display:block;
+    text-decoration: none;
+}
+footer{
+    position:fixed;
+    bottom: 0px;
+    right:50%;
+    transform: translate(50%);
+    opacity: .7;
+}

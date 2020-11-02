@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O autorze</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/55460b0799.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="thirdback"><img src="images/jacco-rienks-QHA8dseFqZ8-unsplash.jpg" alt="" width="100%"></div>
+            <div class="headbox"><p style="background-color:rgba(39, 70, 70, 0.794); font-size: 80px; padding:5rem;color: #FCFFFC; border-radius: 40px;">O autorze</p></div>
+            <div class="arrow"></div>  
+            <nav id='navbar' style="background-color: rgba(45, 58, 58, 1);">
+            <div class="lotx">
+                <figure>
+                    <img src="images/snowboarding-solid.svg" width="80vh" alt="logo" style="color:#FCFFFC;">
+                </figure>
+                <h2>TheLong</h2>
+            </div>
+                    <button id="menuout" onclick="menu()"><i id="menburg" class="fas fa-bars"></i></button>
+                    <div id="mnu" class="menu">
+                        <div class="lista">
+                            <ul>
+                            <li><a href="index.html">Strona główna</a></li>
+                            <hr>
+                            <li><a href="#">Jak zacząć przygodę z longboardami?</a></li>
+                            <hr>
+                            <li><a href="#">O blatach słów kilka</a></li>
+                            <hr>
+                            <li><a href="#">Kółka, trucki i dlaczego ich dobór jest ważny</a></li>
+                            <hr>
+                            <li><a href="#">Przydatne akcesoria, które warto mieć ze sobą</a></li>
+                            <hr>
+                        </ul>
+                    </div>
+                    </div>
+            </nav>
+        </header>
+        <main>
+            <div class="maintextzone" style="margin: auto; padding: 6rem;">
+            <figure>
+                <img src="images/Group 2.png" width="80%">
+            </figure>
+            <aside style="text-align: center; width: 30%; ">
+                <h2>Kim jestem?</h2>
+            <hr style="margin-top:20px; width: 500px; border:2px solid #000;">
+            <p style="padding: 10px;">Jestem uczniem technikum na kierunku technik informatyk, który w czasie pomiędzy obowiązkami, a graniem w gry, wychodzi na dwór jeździć na longboardzie i może śmiało określić to jakąś zjawką. Zajawką, którą chcę się dzielić, bo odnoszę wrażenie, że jazda na longboardzie daje uczucie "surfowania po asfalcie".</p>
+                <h4 style="margin: 20px; font-size: 3vh;">Skontaktuj się ze mną!</h4>
+            <form action="#" method="POST">
+                <label for="mail">E-mail: <input type="email" name="mail" id="mail"></label>
+                <label for="nick">Imię: <input type="text" name="nick" id="nick"></label>
+                <label for="opin" style="height:15rem;">Opinia: <br><textarea name="opin" id="opin" cols="30" rows="7"></textarea></label>
+            </form>
+        </aside>
+            </div>
+        </main>
+        <footer>
+            <p>Autor: Damian Nowak &copy;</p>
+        </footer>
+    </div>
+    <script>
+        function menu(){
+    let zmiana = document.getElementById('mnu');
+    let przycisk = document.getElementById("menburg");
+    if (zmiana.className=="menu"){
+        zmiana.className="menuact";
+    } else {
+        zmiana.className="menu";
+    }
+    if (przycisk.className=="fas fa-bars"){
+        przycisk.className="fas fa-times";
+    } else {
+        przycisk.className="fas fa-bars";
+    }
+}
+    </script>
+</body>
+</html>
