@@ -26,12 +26,14 @@ header{
 }
 .bak{
     background-image: url(../images/storna.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
-.sidepics{
+/* .sidepics{
+    background-image: url(../images/30daysreplay-pr-marketing-oUEjgB_VusE-unsplash.jpg);
+    background-repeat: norepeat;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-}
+} */
 .maintextzone{
     background-color: #FCFFFC;
     border-top-left-radius: 40px;

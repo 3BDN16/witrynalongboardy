@@ -54,7 +54,7 @@
             <form action="#" method="POST">
                 <label for="mail">E-mail: <input type="email" name="mail" id="mail"></label>
                 <label for="nick">Imię: <input type="text" name="nick" id="nick"></label>
-                <label for="opin" style="height:15rem;">Opinia: <br><textarea name="opin" id="opin" cols="30" rows="7"></textarea></label>
+                <label for="opin" style="height:15rem;">Opinia: <br><textarea name="opin" id="opin" cols="29" rows="7"></textarea></label>
             </form>
         </aside>
             </div>
@@ -64,8 +64,11 @@
         </footer>
     </div>
     <script>
-        function menu(){
-    let zmiana = document.getElementById('mnu');
+        let x=window.matchMedia("(min-width:1024px)");
+
+function menu(){
+    if (x.matches){
+        let zmiana = document.getElementById('mnu');
     let przycisk = document.getElementById("menburg");
     if (zmiana.className=="menu"){
         zmiana.className="menuact";
@@ -76,6 +79,7 @@
         przycisk.className="fas fa-times";
     } else {
         przycisk.className="fas fa-bars";
+    }
     }
 }
     </script>

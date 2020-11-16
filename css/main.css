@@ -17,28 +17,28 @@ form{
 label{
     display: block;
     margin: 10px;
-    height: 3rem;
+    height: 3em;
 
 }
 form textarea{
-    margin: 10px;
-    padding: 1rem;
-    font-size: 16px;
+    margin: 1em;
+    padding: 1em;
+    font-size: 1vw;
     border-radius: 30px;
     border: none;
     resize: none;
 }
 form input{
-    padding: 4px;
-    font-size: 16px;
+    padding: 1em;
+    font-size: 1vw;
     border-radius: 30px;
     border: none;
 }
 #menuout{
     order: 3;
     position: absolute;
-    right: 17vh;
-    top:5vh;
+    right: 7.5vw;
+    top:3.5vw;
     width:4%;
 }
 .container{
@@ -89,41 +89,47 @@ header{
 }
 main{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
+    justify-content: center;
 }
 .maintextzone{
     padding-right: 3vh;
     padding-bottom: 0px;
     padding-left: 3vh;
     padding-top: 12vh;
-    width:170vh;   
+    width:80vw;   
     display:flex;
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.sidepics{
-    width: 47vh;
+/* .sidepics{
+    width: 32vw;
     float: right;
 
-}
+} */
 .arttainer{
-display:flex;
-text-align: center;
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 .arttainer p{
     margin:5px;
 }
 .artykul2, .artykul3, .artykul4{
-    width: 33%;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 33vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2vw;
+    margin-bottom: 6vw;
 }
+
 .headbar{
     width: 100%;
 }
@@ -133,6 +139,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
+margin-bottom: 3vw;
 }
 .artykul1 h3{
     margin:5px;
@@ -140,9 +147,10 @@ text-align: center;
 .artykul1 p{
     margin:5px;
 }
+
 nav {
     width: 100%;
-    height: 140px;
+    height: 10vw;
     display:flex;
     flex-direction: row;
     position:fixed;
@@ -153,7 +161,7 @@ nav {
     display: none;
 }
 .menuact{
-    width: 40vh;
+    width: 24vw;
     height: 80vh;
     position: fixed;
     top: 14vh;
@@ -162,7 +170,7 @@ nav {
     
 }
 .menuact>a{
-    margin:10px;
+    margin:.7em;
 }
 .lista{
     
@@ -171,18 +179,19 @@ nav {
     position: relative;
     align-self: center;
     margin:auto;
-    widows: 100%;
+    width: 100%;
     height:100%;
+    font-size: 2.5vh;
 }
 .lista>ul{
     margin:auto;
 }
  .lista>ul>li{
-     margin: 1rem;
+     margin: 1em;
      text-align: center;
  }
  .lista>ul>hr{
-    width:250px;
+    width:20vw;
     margin:auto;
 }
 a{
@@ -191,8 +200,8 @@ a{
 }
 footer{
     position:fixed;
-    bottom: 0px;
-    right:50%;
+    bottom: 0vw;
+    right:50vw;
     transform: translate(50%);
     opacity: .7;
 }
