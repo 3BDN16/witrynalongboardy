@@ -64,7 +64,6 @@ nav {
     background-color: #172e2e;
     color: #fff;
     border-radius: 30px;
-    font-size: 20px;
 }
  .lista>ul>hr{
     color: #707070;
@@ -101,3 +100,9 @@ footer{
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(215, 219, 215); 
   }
+@media(max-width:1024px){
+.menu{
+    background-color: #172e2e;
+    border-radius: 30px;
+}
+}

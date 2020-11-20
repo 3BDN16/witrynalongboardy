@@ -12,17 +12,20 @@ h2{
 h2>a{
     font-size: 4vw;
 }
+.logoimg{
+    width: 6vw;
+    height: 6vw;
+    overflow:hidden;
+}
 form{
     display: flex;
     flex-direction: column;
     align-content: left;
     justify-content: left;
 }
-label{
+label .wejscie{
     display: block;
     margin: 10px;
-    height: 3em;
-
 }
 form textarea{
     margin: 1em;
@@ -39,13 +42,8 @@ form input{
     border: none;
 }
 #menuout{
-    order: 3;
-    position: absolute;
-    right: 10.3vw;
-    top:1.5vw;
-    width:4vw;
-    height: 4vw;
-}
+        display:none;
+    }
 .container{
    position: relative;
 }
@@ -85,7 +83,7 @@ form input{
 }
 .thirdback{
         opacity:.9;
-        width:50vw;
+        width:100vw;
         height: 100vh;
         margin: auto;
         overflow: hidden;
@@ -103,20 +101,20 @@ header{
 }
 main{
     display: flex;
-    flex-direction: row;    
-    justify-content: center;
+    flex-direction: column;    
+    align-items: center;
 }
 .maintextzone{
-    padding-right: 3vh;
+    padding-right: 3vw;
     padding-bottom: 0px;
-    padding-left: 3vh;
-    padding-top: 12vh;
+    padding-left: 3vw;
+    padding-top: 12vw;
     width:80vw;   
     display:flex;
     position: relative;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
 }
 /* .sidepics{
     width: 32vw;
@@ -125,9 +123,9 @@ main{
 } */
 .arttainer{
     display:flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 .arttainer p{
@@ -143,20 +141,31 @@ main{
     margin-top: 2vw;
     margin-bottom: 6vw;
 }
-
+.artykul2>h3>a, .artykul3>h3>a, .artykul4>h3>a{
+    font-size: 2vw;
+}
+.artykul2>p, .artykul3>p, .artykul4>p{
+    font-size: 1.5vw;
+}
 .headbar{
     width: 100%;
 }
 .artykul1{
-width: 40%;
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-margin-bottom: 3vw;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3vw;
 }
 .artykul1 h3{
     margin:5px;
+}
+.artykul1>h3>a{
+    font-size: 3vw;
+}
+.artykul1>p{
+    font-size: 1.5vw;
 }
 .artykul1 p{
     margin:5px;
@@ -164,7 +173,7 @@ margin-bottom: 3vw;
 
 nav {
     width: 100%;
-    height: 5vw;
+    height: 7vw;
     display:flex;
     flex-direction: row;
     position:fixed;
@@ -173,30 +182,20 @@ nav {
     overflow: hidden;
 }
 .menu{
-    display: none;
-}
-.menuact{
-    width: 24vw;
-    height: 80vh;
-    position: fixed;
-    top: 14vh;
-    right: 1vh;
+    width: 80vw;
+    height: 40vw;
     display: block;
-    
-}
-.menuact>a{
-    margin:.7em;
+    /* z-index: 10; */
 }
 .lista{
-    
     display:flex;
     flex-direction: row;
     position: relative;
     align-self: center;
     margin:auto;
     width: 100%;
-    height:100%;
-    font-size: 2.5vh;
+    height: 100%;
+    font-size: 2vw;
 }
 .lista>ul{
     margin:auto;
@@ -206,7 +205,7 @@ nav {
      text-align: center;
  }
  .lista>ul>hr{
-    width:20vw;
+    width:15vw;
     margin:auto;
 }
 a{
@@ -219,4 +218,238 @@ footer{
     right:50vw;
     transform: translate(50%);
     opacity: .7;
+}
+
+@media(min-width:1024px){
+    h2>a{
+        font-size: 2.5vw;
+    }
+    .logoimg{
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-content: left;
+        justify-content: left;
+        height: 40vw;
+    }
+    label .wejscie{
+        display:block;
+        margin: 10px;
+    }
+    form textarea{
+        padding: 1em;
+        font-size: 1vw;
+        border-radius: 30px;
+        border: none;
+        resize: none;
+    }
+    form input{
+        padding: 1em;
+        font-size: 1vw;
+        border-radius: 30px;
+        border: none;
+    }
+
+    #menuout{
+        order: 3;
+        display: block;
+        position: absolute;
+        right:10.3vw;
+        /* top:.5vw;  */
+        top:0px;
+        width:5vw;
+        height: 5vw;
+        overflow: hidden;
+        padding:0;
+        
+    }
+    .container{
+       position: relative;
+    }
+    .headbox{
+        position: absolute;
+        top:50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+    }
+    .arrow{
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 80vh;
+        left:50vw;
+        transform: translate(-50%);
+    }
+    .lotx{
+        margin-left:3vw;
+        flex-grow: 5;
+        order: 1;
+        display:flex;
+        align-items:center;
+    }
+    .lotx>*{
+        align-items: center;
+        float: left;
+    
+    }
+    .contact1{
+        display: none;
+    }
+    .contact2{
+        display:block;
+        border-radius: 60vw 60vw 60vw 60vw;
+        width: 30vw;
+    }
+    .thirdback{
+            opacity:.9;
+            width:60vw;
+            height: 100vh;
+            margin: auto;
+            overflow: hidden;
+    }
+    .bak{
+        opacity:.6;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    header{
+        width: 100vw;
+        height: 100vh;
+    
+    }
+    main{
+        display: flex;
+        flex-direction: row;    
+        justify-content: center;
+    }
+    .maintextzone{
+        padding-right: 3vw;
+        padding-bottom: 0px;
+        padding-left: 3vw;
+        padding-top: 12vw;
+        width:80vw;   
+        display:flex;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* .sidepics{
+        width: 32vw;
+        float: right;
+    
+    } */
+    .arttainer{
+        display:flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .arttainer p{
+        margin:5px;
+    }
+    .artykul2, .artykul3, .artykul4{
+        width: 33vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2vw;
+        margin-bottom: 6vw;
+    }
+    .artykul2>h3>a, .artykul3>h3>a, .artykul4>h3>a{
+        font-size: 2vw;
+    }
+    .artykul2>p, .artykul3>p, .artykul4>p{
+        font-size: 1.5vw;
+    }
+    .headbar{
+        width: 100%;
+    }
+    .artykul1{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 3vw;
+    }
+    .artykul1 h3{
+        margin:5px;
+    }
+    .artykul1>h3>a{
+        font-size: 3vw;
+    }
+    .artykul1>p{
+        font-size: 1.5vw;
+    }
+    .artykul1 p{
+        margin:5px;
+    }
+    
+    nav {
+        width: 100%;
+        height: 5vw;
+        display:flex;
+        flex-direction: row;
+        position:fixed;
+        top:0px;
+        z-index: 10;
+        overflow: hidden;
+    }
+    .menu{
+        display: none;
+    }
+    .menuact{
+        width: 20vw;
+        height: 40vw;
+        position: fixed;
+        top: 5vw;
+        right: 2.5vw;
+        display: block;
+        z-index: 10;
+        
+    }
+    .menuact>a{
+        margin:.7em;
+    }
+    .lista{
+        
+        display:flex;
+        flex-direction: row;
+        position: relative;
+        align-self: center;
+        margin:auto;
+        width: 100%;
+        height:100%;
+        font-size: 1.4vw;
+    }
+    .lista>ul{
+        margin:auto;
+    }
+     .lista>ul>li{
+         margin: 1em;
+         text-align: center;
+     }
+     .lista>ul>hr{
+        width:15vw;
+        margin:auto;
+    }
+    a{
+        display:block;
+        text-decoration: none;
+    }
+    footer{
+        position:fixed;
+        bottom: 0vw;
+        right:50vw;
+        transform: translate(50%);
+        opacity: .7;
+    }
 }

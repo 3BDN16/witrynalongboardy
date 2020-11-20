@@ -14,6 +14,8 @@ function menu(){
     } else {
         przycisk.className="fas fa-bars";
     }
+    } else{
+        zmiana.className="menu";
     }
 }
 
