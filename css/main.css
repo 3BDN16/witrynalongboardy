@@ -146,7 +146,7 @@ main{
     font-size: 3vw;
 }
 .artykul2>p, .artykul3>p, .artykul4>p{
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 .headbar{
     width: 100%;
@@ -163,10 +163,10 @@ main{
     margin:5px;
 }
 .artykul1>h3>a{
-    font-size: 3vw;
+    font-size: 4vw;
 }
 .artykul1>p{
-    font-size: 1.5vw;
+    font-size: 2.5vw;
 }
 .artykul1 p{
     margin:5px;
@@ -313,6 +313,7 @@ form input{
     order: 1;
     display:flex;
     align-items:center;
+    justify-content: right;
 }
 .lotx>*{
     align-items: center;
