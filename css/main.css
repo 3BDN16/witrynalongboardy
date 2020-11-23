@@ -216,23 +216,10 @@ a{
 footer{
     position:fixed;
     bottom: 0vw;
-    right:50vw;
-    transform: translate(50%);
+    right:0vw;
     opacity: .7;
+    font-size: 2vw;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media(min-width:640px){
 h2{
@@ -465,25 +452,9 @@ footer{
     right:50vw;
     transform: translate(50%);
     opacity: .7;
+    font-size: 1vw;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media(min-width:1024px){
     h2>a{
