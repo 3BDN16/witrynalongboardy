@@ -19,7 +19,6 @@ h2>a{
 form{
     display: flex;
     flex-direction: column;
-    align-content: left;
     justify-content: left;
 }
 label .wejscie{
@@ -205,7 +204,10 @@ nav {
      margin: 1em;
      text-align: center;
  }
- .lista>ul>hr{
+ .lista>ul>li>a{
+    margin-bottom: 1em;
+}
+ .lista>ul>li>hr{
     width:15vw;
     margin:auto;
 }
@@ -434,11 +436,11 @@ nav {
 .lista>ul{
     margin:auto;
 }
- .lista>ul>li{
-     margin: 1em;
-     text-align: center;
- }
- .lista>ul>hr{
+.lista>ul>li{
+    margin: 1em;
+    text-align: center;
+}
+.lista>ul>li>hr{
     width:15vw;
     margin:auto;
 }
@@ -689,7 +691,7 @@ footer{
          margin: 1em;
          text-align: center;
      }
-     .lista>ul>hr{
+     .lista>ul>li>hr{
         width:15vw;
         margin:auto;
     }
