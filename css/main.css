@@ -5,11 +5,11 @@
     overflow-x: hidden;
     font-family: Nunito, sans-serif;
 }
-h2{
+h1{
     z-index: 10;
 }
-h2>a{
-    font-size: 6vw;
+h1>a{
+    font-size: 4vw;
 }
 .logoimg{
     width: 8vw;
@@ -141,7 +141,7 @@ main{
     margin-top: 2vw;
     margin-bottom: 6vw;
 }
-.artykul2>h3>a, .artykul3>h3>a, .artykul4>h3>a{
+.artykul2>h2>a, .artykul3>h2>a, .artykul4>h2>a{
     font-size: 3vw;
 }
 .artykul2>p, .artykul3>p, .artykul4>p{
@@ -158,10 +158,10 @@ main{
     text-align: center;
     margin-bottom: 3vw;
 }
-.artykul1 h3{
+.artykul1 h2{
     margin:5px;
 }
-.artykul1>h3>a{
+.artykul1>h2>a{
     font-size: 4vw;
 }
 .artykul1>p{
@@ -219,18 +219,17 @@ footer{
     position:fixed;
     bottom: 0vw;
     right:0vw;
-    opacity: .7;
+    opacity:1;
     font-size: 2vw;
 }
 
 @media(min-width:640px){
-h2{
-    z-index: 10;
-    
-}
-h2>a{
-    font-size: 4vw;
-}
+    h1{
+        z-index: 10;
+    }
+    h1>a{
+        font-size: 4vw;
+    }
 .logoimg{
     width: 6vw;
     height: 6vw;
@@ -377,7 +376,7 @@ main{
     margin-top: 2vw;
     margin-bottom: 6vw;
 }
-.artykul2>h3>a, .artykul3>h3>a, .artykul4>h3>a{
+.artykul2>h2>a, .artykul3>h2>a, .artykul4>h2>a{
     font-size: 2vw;
 }
 .artykul2>p, .artykul3>p, .artykul4>p{
@@ -394,10 +393,10 @@ main{
     text-align: center;
     margin-bottom: 3vw;
 }
-.artykul1 h3{
+.artykul1 h2{
     margin:5px;
 }
-.artykul1>h3>a{
+.artykul1>h2>a{
     font-size: 3vw;
 }
 .artykul1>p{
@@ -453,13 +452,13 @@ footer{
     bottom: 0vw;
     right:50vw;
     transform: translate(50%);
-    opacity: .7;
+    opacity: 1;
     font-size: 1vw;
 }
 }
 
 @media(min-width:1024px){
-    h2>a{
+    h1>a{
         font-size: 2.5vw;
     }
     .logoimg{
@@ -617,7 +616,7 @@ footer{
         margin-top: 2vw;
         margin-bottom: 6vw;
     }
-    .artykul2>h3>a, .artykul3>h3>a, .artykul4>h3>a{
+    .artykul2>h2>a, .artykul3>h2>a, .artykul4>h2>a{
         font-size: 2vw;
     }
     .artykul2>p, .artykul3>p, .artykul4>p{
@@ -634,10 +633,10 @@ footer{
         text-align: center;
         margin-bottom: 3vw;
     }
-    .artykul1 h3{
+    .artykul1 h2{
         margin:5px;
     }
-    .artykul1>h3>a{
+    .artykul1>h2>a{
         font-size: 3vw;
     }
     .artykul1>p{
@@ -704,6 +703,6 @@ footer{
         bottom: 0vw;
         right:50vw;
         transform: translate(50%);
-        opacity: .7;
+        opacity:1;
     }
 }
