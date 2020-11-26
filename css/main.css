@@ -238,7 +238,6 @@ footer{
 form{
     display: flex;
     flex-direction: column;
-    align-content: left;
     justify-content: left;
 }
 label .wejscie{
@@ -468,7 +467,6 @@ footer{
     form{
         display: flex;
         flex-direction: column;
-        align-content: left;
         justify-content: left;
         height: 40vw;
     }
