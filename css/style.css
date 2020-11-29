@@ -15,6 +15,7 @@ header{
     color: #fff;
     font-size: 5vh;
     border: none;
+    outline: none;
 }
 .arrow{
     border-left: 40px solid transparent;
