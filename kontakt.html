@@ -16,8 +16,8 @@
                 <img src="images/jacco-rienks-QHA8dseFqZ8-unsplash.jpg" alt="" width="100%">
             </div>
             <div class="headbox">
-                <p style="background-color:rgba(39, 70, 70, 0.794); font-size: 6vw; padding:5rem;color: #FCFFFC; border-radius: 40px;">
-                    O autorze
+                <p style="background-color:rgba(39, 70, 70, 0.794); font-size: 5vw; padding:2em; color: #FCFFFC; border-radius: 40px;">
+                    O&nbsp;autorze
                 </p>
             </div>
             <div class="arrow"></div>  
@@ -74,21 +74,21 @@
             </div>
             </div>
             <div class="maintextzone" style="margin: auto; padding: 6rem; flex-direction: column; justify-content: center; align-items: center;">
-            <figure class="contact1">
+            <figure class="contact1" id="obraz1">
                 <img src="images/Group 2.png" width="80%">
             </figure>
-            <figure class="contact2">
+            <figure class="contact2" id="obraz2">
                 <img src="images/67430488_2374005452927298_2239443536372039680_o.jpg" width="100%">
             </figure>
-            <aside style="text-align: center; width: 30%; ">
+            <aside style="text-align: center; width: 60vw;">
                 <h2>
                     Kim jestem?
                 </h2>
-            <hr style="margin-top:20px; width: 500px; border:2px solid #000;">
-            <p style="padding: 10px;">
+            <hr style="margin-top:20px; width: 30vw; margin: auto; border:2px solid #000;">
+            <p style="padding: 10px; width: 30vw; margin: auto;">
                 Jestem uczniem technikum na kierunku technik informatyk, który w czasie pomiędzy obowiązkami, a graniem w gry, wychodzi na dwór jeździć na longboardzie i może śmiało określić to jakąś zjawką. Zajawką, którą chcę się dzielić, bo odnoszę wrażenie, że jazda na longboardzie daje uczucie "surfowania po asfalcie".
             </p>
-                <h3 style="margin: 20px; font-size: 1.5vw;">
+                <h3 style="margin: 20px; font-size: 2vw;">
                     Skontaktuj się ze mną!
                 </h3>
             <form action="#" method="POST">
@@ -120,7 +120,16 @@
     </div>
     <script>
         let x=window.matchMedia("(min-width:1024px)");
-
+            let obraz1 = document.getElementById('obraz1');
+            let obraz2 = document.getElementById('obraz2');
+        
+        if (x.matches){
+            obraz1.className="contact2";
+            obraz2.className="contact1";
+        } else {
+            obraz2.className="contact2";
+            obraz1.className="contact1";
+        }
 function menu(){
     if (x.matches){
         let zmiana = document.getElementById('mnu');

@@ -35,6 +35,7 @@ form textarea{
 }
 form input{
     padding: 1em;
+    margin-bottom: 1em;
     font-size: 1vw;
     border-radius: 30px;
     border: none;
