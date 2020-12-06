@@ -1,0 +1,489 @@
+$font1: Nunito, sans-serif;
+$font2: Nerko One, cursive;
+
+@import "_mixins.scss";
+
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: $font1;
+}
+h1{
+    z-index: 10;
+}
+h1>a{
+    font-size: 4vw;
+}
+.logoimg{
+    @include wymiary(8vw,8vw);
+    overflow:hidden;
+}
+form{
+    @include simpleflex(column, left, none);
+}
+label .wejscie{
+    display: block;
+}
+form textarea{
+    @include marginesy(1em,1em);
+    margin: auto;
+    font-size: 1vw;
+    border-radius: 30px;
+    border: none;
+}
+form input{
+    padding: 1em;
+    @include marginy(0, 0, 1em, 0);
+    @include wymiary(16vw, 5vw);
+    font-size: 1vw;
+    border-radius: 30px;
+    border: none;
+}
+
+#menuout{
+    display:none;
+}
+.container{
+   position: relative;
+   @include simpleflex(column, center, center);
+}
+.headbox{
+    position: absolute;
+    @include polozenie(50vh, auto, 50vw, auto);
+    transform: translate(-50%, -50%);
+    p{
+        background-color:rgba(39, 70, 70, 0.794); 
+        font-size: 4vw; 
+        padding:1.5em; 
+        color: #FCFFFC; 
+        border-radius: 10vw; 
+        text-align: center;
+    }
+}
+.arrow{
+    @include wymiary(0, 0);
+    position: absolute;
+    @include polozenie(80vh, auto, 50vw, auto);
+    transform: translate(-50%);
+}
+.lotx{
+    flex-grow: 5;
+    order: 1;
+    @include simpleflex(none, center, center);
+}
+.lotx>*{
+    align-items: left;
+    float: left;
+}
+
+.thirdback{
+        opacity:.9;
+        @include wymiary(80vw, 100vh);
+        margin: auto;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        img{
+            width: 150%;
+            position: absolute;
+            left: -20vw;
+        }
+}
+.bak{
+    opacity:.6;
+    @include wymiary(100vw,100vh);
+    overflow: hidden;
+}
+header{
+    @include wymiary(100vw, 100vh);
+}
+nav {
+    @include wymiary(100vw,15vw);
+    @include simpleflex(row, none, none);
+    position:fixed;
+    top:0px;
+    z-index: 10;
+    overflow: hidden;
+}
+.menu{
+    @include wymiary(80vw, 40vw);
+    display: block;
+    /* z-index: 10; */
+}
+.lista{
+    @include simpleflex(row, none, center);
+    position: relative;
+    margin:auto;
+    @include wymiary(100%,100%);
+    font-size: 2vw;
+}
+.lista>ul{
+    margin:auto;
+}
+ .lista>ul>li{
+     margin: 1em;
+     text-align: center;
+ }
+ .lista>ul>li>a{
+    margin-bottom: 1em;
+}
+ .lista>ul>li>hr{
+    width:15vw;
+    margin:auto;
+}
+a{
+    display:block;
+    text-decoration: none;
+}
+main{
+    @include simpleflex(column,none,center);
+}
+.maintextzone{
+    @include paddingi(12vw,3vw,0,3vw);
+    width:80vw;
+    position: relative;
+    @include simpleflex(column, none, center);
+    flex-wrap: wrap;
+    margin-bottom: 8vw;
+}
+.pudlo1, .pudlo2, .pudlo3, .pudlo4{
+    h2{
+        font-size: 3vw;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    p{
+        font-size: 2vw;
+        text-align: left;
+        padding: 1.5em;
+    }
+}
+
+.image1{
+    display: none;
+}
+.image2{
+    display: none;
+}
+.arttainer{
+    @include simpleflex(column-reverse, none, center);
+    text-align: center;
+    flex-wrap: wrap;
+}
+.arttainer p{
+    margin:0.5vw;
+}
+.artykul2, .artykul3, .artykul4{
+    width: 33vw;
+    @include marginy(2vw, 1vw, 6vw, 1vw);
+    @include simpleflex(column, none, center);
+}
+.artykul2>h2>a, .artykul3>h2>a, .artykul4>h2>a{
+    font-size: 3vw;
+}
+.artykul2>p, .artykul3>p, .artykul4>p{
+    font-size: 2vw;
+}
+.headbar{
+    width: 100%;
+}
+.artykul1{
+    width: 70%;
+    @include simpleflex(column,none,center);
+    text-align: center;
+    @include marginy(0,0,3vw,0);
+}
+.artykul1 h2{
+    margin:5px;
+}
+.artykul1>h2>a{
+    font-size: 4vw;
+}
+.artykul1 p{
+    font-size: 2.5vw;
+    margin:5px;
+}
+footer{
+    position:fixed;
+    @include polozenie(auto, 0, 50vw, 0);
+    transform: translate(-50%);
+    opacity:1;
+    font-size: 1vw;
+    width: 14vw;
+    text-align: center;
+}
+.img1, .img2, .img3{
+    display: block;
+    text-align: center;
+    img{
+        width: 40vw;
+    }
+}
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+
+@media (min-width: 640px){
+    h1 a{
+       font-size: 3.5vw; 
+    }
+    nav{
+        @include wymiary(100vw, 10vw);
+    }
+    .image1{
+        display:block;
+        position: absolute;
+        transform: rotate(-5deg);
+        width: 15vw;
+        @include polozenie(26vw, auto, 6vw, auto);
+    }
+    .image2{
+        display:block;
+        position: absolute;
+        transform: rotate(5deg);
+        width: 15vw;
+        @include polozenie(35vw, auto, auto, 6vw);
+    }
+    .artykul1{
+        width: 50%;
+    }
+    .headbox{
+        p{
+            font-size: 3vw;
+            padding: 1.3em;
+        }
+    }
+    .pudlo{
+        width: 100%;
+    }
+    .pudlo1, .pudlo2, .pudlo3, .pudlo4{
+        position: relative;
+        width: 100%;
+        h2{
+            font-size: 2vw;
+        }
+        p{
+            font-size: 1.3vw;
+        }
+        .boxie, .boxie2, .boxie3{
+            h2{
+                font-size: 2vw;
+            }
+            p{
+                font-size: 1.3vw;
+            }
+            position: relative;
+            width: 60%;
+        }
+        .img1{
+            @include wymiary(45vw, 40vw);
+            position: absolute;
+            top: 30%;
+            left: -17vw;
+            text-align: left;
+            img{
+                width: 50vw;
+                
+            }
+        }
+        .img2{
+            width: 35vw;
+            height: 50vw;
+            position: absolute;
+            top:20%;
+            right: -8vw;
+            overflow: hidden;
+            transform: scaleX(-1);
+            text-align: left;
+            img{
+                width: 40vw;
+                
+            }
+        }
+        .img3{
+            width: 35vw;
+            height: 40vw;
+            position: absolute;
+            top: 30%;
+            left: -7vw;
+            text-align: left;
+            overflow: hidden;
+            img{
+                width: 40vw;
+            }
+        }
+        
+
+    }
+    .pudlo2, .pudlo3, .pudlo4{
+        margin-top: 3vw;
+    }
+    .boxie, .boxie3{
+        left: 30vw;
+    }
+}
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+//===============================================================
+@media (min-width:1024px){
+    h1>a{
+        font-size: 2vw;
+    }
+    .lotx{
+        @include simpleflex(none, left, center);
+        @include marginy(0px, 3vw, 0px, 0px);
+    }
+    .logoimg{
+        @include wymiary(3vw, 3vw);
+    }
+    #menuout{
+        display: flex;
+        position: absolute;
+        right: 10.3vw;
+        top: 0px;
+        @include wymiary(5vw, 5vw);
+        order: 3;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        i{
+            font-size: 2vw;
+        }
+    }
+    .headbox{
+        p{
+            font-size: 4vw;
+            padding: 1em;
+        }
+    }
+    nav{
+        height: 5vw;
+    }
+    .menu{
+        display: none;
+    }
+    .menuact{
+        position: fixed;
+        top: 5vw;
+        right: 4.50vw;
+        @include wymiary(15vw, 60vh);
+        z-index: 5;
+    }
+    .lista{
+        font-size: 1vw;
+    }
+    .arttainer{
+        @include simpleflex(row, center, none);
+    }
+    .artykul2, .artykul3, .artykul4{
+        width: 30vw;
+        @include marginy(2vw, 1vw, 6vw, 1vw);
+        @include simpleflex(column, none, center);
+    }
+    .artykul2>h2>a, .artykul3>h2>a, .artykul4>h2>a{
+        font-size: 1.5vw;
+    }
+    .artykul2>p, .artykul3>p, .artykul4>p{
+        font-size: 0.9vw;
+    }
+    .artykul1 h2{
+        margin:5px;
+    }
+    .artykul1>h2>a{
+        font-size: 2vw;
+    }
+    .artykul1 p{
+        font-size: 1vw;
+        margin:5px;
+    }
+    .image1{
+
+        @include polozenie(10vw, auto, 5vw, auto);
+    }
+    .image2{
+        display:block;
+        position: absolute;
+        transform: rotate(5deg);
+        width: 15vw;
+        @include polozenie(10vw, auto, auto, 5vw);
+    }
+    aside{
+        h2{
+            @include marginy(1em, 0, 0, 0);
+            font-size: 4vw;
+        }
+        p{
+            font-size: 1.5vw;
+        }
+    }
+    .pudlo1, .pudlo2, .pudlo3, .pudlo4{
+        .boxie, .boxie2, .boxie3{
+            h2{
+                font-size: 1vw;
+            }
+            p{
+                font-size: .8vw;
+            }
+        }
+        .img1{
+            top: 20%;
+            left: -5vw;
+            @include wymiary(40vw, 25vw);
+            img{
+                width: 30vw;
+            }
+        }
+        .img2{
+            @include wymiary(40vw, 25vw);
+            top:10%;
+            right: 3vw;
+            img{
+                width: 20vw;
+                
+            }
+        }
+        .img3{
+            @include wymiary(40vw, 25vw);
+            top: 15%;
+            left: 3vw;
+            img{
+                width: 20vw;
+            }
+        }
+        h2{
+            font-size: 1vw;
+        }
+        p{
+            font-size: .8vw;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@mixin wymiary($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin simpleflex($dir, $jus, $align){
+    display: flex;
+    @if $dir == none{
+        @if $jus == none and $align != none{
+            align-items: $align;
+        } @else if $align == none and $jus != none{
+            justify-content: $jus;
+        } @else{
+            justify-content: $jus;
+            align-items: $align;
+        }
+    } @else {
+        flex-direction: $dir;
+        @if $dir == column and $jus == center and $align == none{
+            justify-content: $jus; 
+        } @else if $dir == row and $align == center and $jus == none{
+            align-items: $align;
+        } @else {
+            justify-content: $jus;
+            align-items: $align;
+        }
+    }
+    
+}
+@mixin marginesy($width, $height){
+    margin: $width;
+    padding: $height;
+}
+@mixin paddingi($padtop, $padleft, $padbot, $padright){
+    padding-top:$padtop;
+    padding-left: $padleft;
+    padding-bottom: $padbot;
+    padding-right: $padright;
+}
+@mixin polozenie($top, $bot, $left, $right){
+    top: $top;
+    bottom: $bot;
+    left: $left;
+    right: $right;
+}
+@mixin marginy($martop, $marleft, $marbot,$marright){
+    margin-top: $martop;
+    margin-left: $marleft;
+    margin-bottom: $marbot;
+    margin-right: $marright;
+}
