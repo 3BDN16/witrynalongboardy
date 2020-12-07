@@ -134,7 +134,6 @@ nav {
   height: 15vw;
   display: flex;
   flex-direction: row;
-  justify-content: none;
   position: fixed;
   top: 0px;
   z-index: 10;

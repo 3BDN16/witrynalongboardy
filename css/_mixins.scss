@@ -16,10 +16,10 @@
         }
     } @else {
         flex-direction: $dir;
-        @if $align == none{
-            justify-content: $jus; 
-        } @else if $jus == none{
+        @if $jus == none and $align != none{
             align-items: $align;
+        } @else if $align == none and $jus != none{
+            justify-content: $jus;
         } @else if $jus == none and $align == none{
         } @else {
             justify-content: $jus;
