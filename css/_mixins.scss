@@ -9,7 +9,8 @@
             align-items: $align;
         } @else if $align == none and $jus != none{
             justify-content: $jus;
-        } @else{
+        } @else if $jus == none and $align == none{
+        } @else {
             justify-content: $jus;
             align-items: $align;
         }
@@ -20,6 +21,9 @@
         } @else if $jus == none{
             align-items: $align;
         } @else if $jus == none and $align == none{
+        } @else {
+            justify-content: $jus;
+            align-items: $align;
         }
     }
     
