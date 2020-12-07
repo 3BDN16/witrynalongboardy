@@ -19,9 +19,7 @@
             justify-content: $jus; 
         } @else if $jus == none{
             align-items: $align;
-        } @else {
-            justify-content: $jus;
-            align-items: $align;
+        } @else if $jus == none and $align == none{
         }
     }
     

@@ -83,11 +83,11 @@ form input{
     flex-grow: 5;
     order: 1;
     @include simpleflex(none, center, center);
-}
-.lotx>*{
-    align-items: left;
-    float: left;
-}
+ }
+// .lotx>*{
+//     align-items: left;
+//     float: left;
+// }
 
 .thirdback{
         opacity:.9;

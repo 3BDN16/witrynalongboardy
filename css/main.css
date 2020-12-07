@@ -60,8 +60,6 @@ form input {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .headbox {
@@ -99,11 +97,6 @@ form input {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.lotx > * {
-  align-items: left;
-  float: left;
 }
 
 .thirdback {
