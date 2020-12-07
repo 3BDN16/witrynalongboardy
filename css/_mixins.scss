@@ -15,9 +15,9 @@
         }
     } @else {
         flex-direction: $dir;
-        @if $dir == column and $jus == center and $align == none{
+        @if $align == none{
             justify-content: $jus; 
-        } @else if $dir == row and $align == center and $jus == none{
+        } @else if $jus == none{
             align-items: $align;
         } @else {
             justify-content: $jus;
